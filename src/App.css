@@ -6,7 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.samplelogo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1920px; /* Set maximum width to a standard desktop size */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
