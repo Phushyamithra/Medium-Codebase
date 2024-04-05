@@ -1,0 +1,24 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 60px; /* Add rounded corners */
+  font-family: "Playfair Display SC", serif;
+  z-index: 1;
+}
+
+.nav-menu .nav-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  margin-right: 230px; 
+}
