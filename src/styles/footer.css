@@ -3,10 +3,9 @@
     font-family: "Playfair Display SC", serif;
     display: flex;
     color: white;
-    padding: 0;
+    padding: 1px;
     height: auto; /* Change height to auto for responsiveness */
     left: 0;
-    bottom: 10%;
     width: 100%; 
 }
 
@@ -25,11 +24,12 @@ a {
 }
 
 .footer img {
-    height: 15%; /* Adjust the height of the image relative to the container's height */
-    width: 33%; /* Let the width adjust automatically to maintain aspect ratio */
-    position: absolute;
-    right: 2%; /* Adjust the position from right */
-    bottom: 5%; /* Adjust the position from bottom */
+    height: 10%; 
+    width: 25%; 
+    margin-top: 30px;
+    margin-left: 500px; 
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    
 }
 
 .shop, .support, .social, .about {
