@@ -26,7 +26,7 @@ const Footer = () => {
                 <h6>About Us</h6>
                 <h6>Work with Us</h6>
            </div>
-            <img src="logo.png" className="logofooter" alt="image" />
+            <img src="sample.png" className="logofooter" alt="image" />
         </div>
     )
 }
