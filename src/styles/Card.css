@@ -3,7 +3,6 @@
   right: 35%;
   width: 250px;
   height: 400px;
-  background: white;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -24,12 +23,15 @@
 .wrapper .container .top {
   height: 80%;
   width: 100%;
-  background: url(https://s-media-cache-ak0.pinimg.com/736x/49/80/6f/49806f3f1c7483093855ebca1b8ae2c4.jpg)
-    no-repeat center center;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
+}
+.wrapper .container .top > img {
+  width: 250px;
+  height: 350px;
+  /* margin: 0px 0px 0px 0px; */
 }
 .wrapper .container .bottom {
   width: 200%;

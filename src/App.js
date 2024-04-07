@@ -5,24 +5,15 @@ import './styles/Card.css'
 
 import Header from './components/sections/Header.js'
 import Footer from './components/sections/Footer.js'
-import Card from './components/Card.js'
-function App() {
-  const cardLoop = [];
-  for(var i=0;i<10;i++){
-    cardLoop.push(<Card />);
-  }
+import ProductList from './components/ProductList.js'
 
+function App() {
   return (
     <div className="App">
         <Header/>
-        <img src="sample.jpg" className="samplelogo" alt="sample image" />
-        <div className="card-Container">
-        <div className="product-list--wrapper">
-        {[...Array(10)].map((_, index) => (
-        <Card key={index} />
-      ))}
-        </div>
-        </div>
+        <img src="sample.jpeg" className="samplelogo" alt="sample image" />
+        <ProductList/>
+        <ProductList/>
       <Footer />
       
     </div>

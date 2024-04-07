@@ -1,0 +1,20 @@
+/* GLOBAL STYLES */
+  
+* {
+    box-sizing: border-box;
+    }
+   
+
+
+/* .item {
+border: 5px solid #87b5ff;
+border-radius: 1px;
+background-color: #1c57b5;
+margin-left : 200px;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    
+    }

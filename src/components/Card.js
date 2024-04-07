@@ -5,9 +5,11 @@ const Card = ({ index }) => {
 
     return (
             <div className="card">
-        <div class="wrapper">
+            <div class="wrapper">
                 <div class="container">
-                    <div class="top"></div>
+                    <div class="top">
+                        <img src="Krishna.jpeg" alt="image" />
+                    </div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
