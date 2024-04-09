@@ -1,70 +1,51 @@
-import { RiInformationFill } from "react-icons/ri";
 import { FaCartPlus } from "react-icons/fa";
+import { FaHeartCirclePlus } from "react-icons/fa6";
+import { MdClear } from "react-icons/md";
+import { useState } from "react";
 
-const Card = ({ index }) => {
+const Card = ({ index, product }) => {
+
+    const [buyClass, setbuyClass] = useState("bottom");
+    // when user clicks buy 
+    const handleBuyClick = () => {
+        setbuyClass("bottom clicked");
+    };
+    // when user clicks delete 
+    const handleRemoveClick = () => {
+        setbuyClass("bottom");
+    };
+
+    const handleWishlistClick = () => {
+        // Add your wishlist logic here
+        console.log("Added to Wishlist");
+    };
+
 
     return (
-            <div className="card">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="top">
-                        <img src="Krishna.jpeg" alt="image" />
+        <div className="card">
+            <div className="wrapper">
+                <div className="container">
+                    <div className="top">
+                        <img src={product.pic} alt="image" />
                     </div>
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>£250</p>
+                    <div className={buyClass}>
+                        <div className="left">
+                            <div className="details">
+                                <h1>{product.title}</h1>
+                                <p>{product.subtitle}</p>
+                                <p>{product.price}</p>
                             </div>
-                            <div class="buy"><FaCartPlus size={30} /></div>
+                            <div className="buy" onClick={handleBuyClick}><FaCartPlus size={23} /></div>
+                            <div className="wishlist" onClick={handleWishlistClick}><FaHeartCirclePlus size={23} /></div>
                         </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h1>Chair</h1>
+                        <div className="right">
+                            <div className="done" onClick={handleRemoveClick}><MdClear size={23} /></div>
+                            <div className="details">
+                                <h1>{product.subtitle}</h1>
                                 <p>Added to your cart</p>
                             </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
+                            {/* <div className="remove" onClick={handleRemoveClick}><MdClear size={23} /></div> */}
                         </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon"><RiInformationFill size={25} /></div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Width</th>
-                                <th>Height</th>
-                            </tr>
-                            <tr>
-                                <td>3000mm</td>
-                                <td>4000mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                        </table>
                     </div>
                 </div>
             </div>
@@ -73,3 +54,55 @@ const Card = ({ index }) => {
 }
 
 export default Card;
+
+
+
+
+
+
+
+
+
+
+
+
+// info part if needed take it above
+{/* <div class="inside">
+    <div class="icon"><RiInformationFill size={25} /></div>
+    <div class="contents">
+        <table>
+            <tr>
+                <th>Width</th>
+                <th>Height</th>
+            </tr>
+            <tr>
+                <td>3000mm</td>
+                <td>4000mm</td>
+            </tr>
+            <tr>
+                <th>Something</th>
+                <th>Something</th>
+            </tr>
+            <tr>
+                <td>200mm</td>
+                <td>200mm</td>
+            </tr>
+            <tr>
+                <th>Something</th>
+                <th>Something</th>
+            </tr>
+            <tr>
+                <td>200mm</td>
+                <td>200mm</td>
+            </tr>
+            <tr>
+                <th>Something</th>
+                <th>Something</th>
+            </tr>
+            <tr>
+                <td>200mm</td>
+                <td>200mm</td>
+            </tr>
+        </table>
+    </div>
+</div> */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaHeart,FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -12,7 +13,8 @@ const Header = () => {
       <img className="logo" src="Half_logo.png" alt="Small Logo" />
       <div className="nav-menu">
         <a href="#" className="nav-link">Account</a>
-        <a href="#" className="nav-link">Cart</a>
+        <a href="#" className="nav-link "><FaHeart /></a>
+        <a href="#" className="nav-link "><FaShoppingCart /></a>
       </div>
     </div>
   );

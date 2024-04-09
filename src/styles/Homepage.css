@@ -1,0 +1,27 @@
+.titleSection {
+  text-align: center;
+  margin: 0px;
+}
+
+.titleSection h1 {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-transform: uppercase; /* Transform text to uppercase */
+  letter-spacing: 2px; /* Increase letter spacing for emphasis */
+  position: relative; /* Position relative for pseudo-element */
+}
+
+.titleSection h1::after {
+  content: ""; /* Add a pseudo-element */
+  position: absolute;
+  bottom: -10px; /* Position below the title */
+  left: 50%; /* Position in the middle */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 50px; /* Width of the line */
+  height: 2px; /* Height of the line */
+  background-color: #333; /* Color of the line */
+}
