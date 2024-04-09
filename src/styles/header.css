@@ -5,9 +5,10 @@
   padding: 10px 100px;
   background-color: #ffffff;
   border-bottom: 1px solid #ffffff;
-  border-radius: 60px; /* Add rounded corners */
-  font-family: "Playfair Display SC", serif;
-  z-index: 1;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .nav-menu .nav-link {
@@ -16,6 +17,7 @@
   font-size: 20px;
   margin-right: 40px;
 }
+
 
 .logo {
   width: 50px;
