@@ -8,7 +8,7 @@ const HomePage = () => {
         <>
             <Header />
             <div className='titleSection'>
-                <h1>Cards</h1>
+                <h1>Themes</h1>
             </div>
             <img src="s2.jpg" className="samplelogo" alt="sample image" />
             <ProductList />
