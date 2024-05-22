@@ -3,22 +3,15 @@
   
 }
 
-.card-Container{
-  flex-wrap: wrap; /* Allow cards to wrap to the next row */
-  justify-content: flex-start; /* Align cards to the left */
-  padding: 40px 32px;
-  min-height: 100vh;
-  
-}
-
 .samplelogo{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 1920px; /* Set maximum width to a standard desktop size */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 1920px; 
+  height: auto;
   z-index: -1;
+  background-repeat: repeat;
 }
 
 
