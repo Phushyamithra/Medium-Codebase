@@ -10,12 +10,12 @@ const HomePage = () => {
             <div className='titleSection'>
                 <h1>Cards</h1>
             </div>
-            <img src="sample.jpeg" className="samplelogo" alt="sample image" />
+            <img src="s2.jpg" className="samplelogo" alt="sample image" />
             <ProductList />
-            <div className='titleSection'>
+            {/* <div className='titleSection'>
                 <h1>Products</h1>
             </div>
-            <ProductList />
+            <ProductList /> */}
 
             <Footer />
         </>
@@ -23,3 +23,5 @@ const HomePage = () => {
 }
 
 export default HomePage;
+
+

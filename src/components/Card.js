@@ -2,6 +2,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { FaHeartCirclePlus } from "react-icons/fa6";
 import { MdClear } from "react-icons/md";
 import { useState } from "react";
+import Modal from "./Modal.js";
 
 const Card = ({ index, product }) => {
 
@@ -19,11 +20,21 @@ const Card = ({ index, product }) => {
         // Add your wishlist logic here
         console.log("Added to Wishlist");
     };
+        // display modal logic
+    const[modal,setShowModal] = useState(false);
+
+    const openModal=() => {
+      setShowModal(true);
+    }
+    const closeModal=() => {
+      setShowModal(false);
+    }
+    // ends here 
 
 
-    return (
+     return (
         <div className="card">
-            <div className="wrapper">
+            <div className="wrapper" onClick={openModal}>
                 <div className="container">
                     <div className="top">
                         <img src={product.pic} alt="image" />
@@ -49,6 +60,10 @@ const Card = ({ index, product }) => {
                     </div>
                 </div>
             </div>
+            {modal && <Modal closeModal={closeModal}>
+                Hello World in Popup !!
+
+            </Modal>}
         </div>
     )
 }
