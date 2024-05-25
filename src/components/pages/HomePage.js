@@ -3,9 +3,7 @@ import Header from '../sections/Header';
 import '../../styles/Homepage.css';
 
 const texts = [
-  "Desi Medium   ",
-  "Telugu Medium    ",
-  "Resemblance of India   "
+  "Swagatham.   "
 ];
 
 const HomePage = () => {
