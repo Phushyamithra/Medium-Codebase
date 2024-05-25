@@ -2,13 +2,14 @@ import './styles/App.css';
 import './styles/footer.css'
 import './styles/header.css'
 import './styles/Card.css'
-import './styles/Homepage.css'
+// import './styles/Homepage.css'
 import './styles/modal.css'
 import './styles/Arrow.css'
-import Homepage from './components/pages/Shop.js';
+import './styles/Shop.css'
+import Shop from './components/pages/Shop.js';
 import Account from './components/pages/Account.js';
 import Contact from './components/pages/Contact.js';
-import Shop from './components/pages/HomePage.js';
+import Homepage from './components/pages/HomePage.js';
 import Story from './components/pages/Story.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
