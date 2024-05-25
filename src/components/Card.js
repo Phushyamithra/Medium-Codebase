@@ -30,8 +30,6 @@ const Card = ({ index, product }) => {
       setShowModal(false);
     }
     // ends here 
-
-
      return (
         <div className="card">
             <div className="wrapper" onClick={openModal}>
@@ -39,7 +37,7 @@ const Card = ({ index, product }) => {
                     <div className="top">
                         <img src={product.pic} alt="image" />
                     </div>
-                    <div className={buyClass}>
+                    {/* <div className={buyClass}>
                         <div className="left">
                             <div className="details">
                                 <h1>{product.title}</h1>
@@ -55,9 +53,8 @@ const Card = ({ index, product }) => {
                                 <h1>{product.subtitle}</h1>
                                 <p>Added to your cart</p>
                             </div>
-                            {/* <div className="remove" onClick={handleRemoveClick}><MdClear size={23} /></div> */}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {modal && <Modal closeModal={closeModal}>
