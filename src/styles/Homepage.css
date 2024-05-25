@@ -64,7 +64,7 @@ body {
   font-size: 2.5em; /* Larger text size */
   font-weight: bold; /* Bolder text */
   color: #ffffff; /* Light text color */
-  animation: typing 5s steps(40, end), blink-caret .95s step-end infinite; /* Slower typing animation */
+  animation: typing 5s steps(40, end), blink-caret .115s step-end infinite; /* Slower typing animation */
 }
 
 .blink {
