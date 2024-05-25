@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 100px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.4); /* White background with 80% opacity */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* Border matching the background opacity */
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -17,7 +17,6 @@
   font-size: 20px;
   margin-right: 40px;
 }
-
 
 .logo {
   width: 50px;

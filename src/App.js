@@ -5,12 +5,11 @@ import './styles/Card.css'
 import './styles/Homepage.css'
 import './styles/modal.css'
 import './styles/Arrow.css'
-import Homepage from './components/pages/HomePage';
+import Homepage from './components/pages/Shop.js';
 import Account from './components/pages/Account.js';
 import Contact from './components/pages/Contact.js';
-import Shop from './components/pages/Shop.js';
+import Shop from './components/pages/HomePage.js';
 import Story from './components/pages/Story.js';
-import Header from './components/sections/Header'; // Make sure the path to Header is correct
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
