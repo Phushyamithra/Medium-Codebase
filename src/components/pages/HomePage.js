@@ -3,7 +3,7 @@ import Header from '../sections/Header';
 import '../../styles/Homepage.css';
 
 const texts = [
-  "Swagatham.   "
+  "Svāgatham.   "
 ];
 
 const HomePage = () => {
