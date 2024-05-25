@@ -6,11 +6,26 @@ import './styles/Homepage.css'
 import './styles/modal.css'
 import './styles/Arrow.css'
 import Homepage from './components/pages/HomePage';
+import Account from './components/pages/Account.js';
+import Contact from './components/pages/Contact.js';
+import Shop from './components/pages/Shop.js';
+import Story from './components/pages/Story.js';
+import Header from './components/sections/Header'; // Make sure the path to Header is correct
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Homepage></Homepage>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/account" element={<Account />} />
+          {/* You can add other routes like /favorites and /cart if you have those components */}
+        </Routes>
+      </Router>
     </div>
   );
 }
