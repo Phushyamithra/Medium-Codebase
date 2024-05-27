@@ -8,18 +8,25 @@ const Shop = () => {
 
     return (
         <>
-            <Header />
-            <div className='titleSection'>
-                <h1>Themes</h1>
+            <div className="story-container">
+                <Header />
+                <video autoPlay muted loop className="background-video">
+                    <source src="Shop_bg.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div className="story-content">
+                    <div className='titleSection'>
+                        <h1>Themes</h1>
+                    </div>
+                    {/* <img src="s2.jpg" className="samplelogo" alt="sample image" /> */}
+                    <ProductList />
+                    <div className='titleSection'>
+                        <h1>Products</h1>
+                    </div>
+                    <ProductList />
+                </div>
+                <Footer />
             </div>
-            <img src="s2.jpg" className="samplelogo" alt="sample image" />
-            <ProductList />
-            <div className='titleSection'>
-                <h1>Products</h1>
-            </div>
-            <ProductList />
-
-            <Footer />
         </>
     )
 }
