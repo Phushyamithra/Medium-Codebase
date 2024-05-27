@@ -1,4 +1,5 @@
 import { FaInstagram, FaYoutube } from 'react-icons/fa'
+import '../../styles/footer.css'
 
 const Footer = () => {
     return (

@@ -1,3 +1,5 @@
+import '../styles/Arrow.css'
+
 export const LeftArrow = ({handleLeftClick}) => {
     return (
     <div class="center-con" onClick={handleLeftClick} >

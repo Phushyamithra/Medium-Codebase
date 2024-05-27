@@ -1,4 +1,6 @@
 import  ReactDOM  from "react-dom";
+import '../styles/modal.css'
+
 // import Backdrop from './Loader.js'
 const Modal = ({closeModal,children}) => {
     return (
