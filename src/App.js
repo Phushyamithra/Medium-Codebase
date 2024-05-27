@@ -1,11 +1,4 @@
 import './styles/App.css';
-import './styles/footer.css'
-import './styles/header.css'
-import './styles/Card.css'
-// import './styles/Homepage.css'
-import './styles/modal.css'
-import './styles/Arrow.css'
-import './styles/Shop.css'
 import Shop from './components/pages/Shop.js';
 import Account from './components/pages/Account.js';
 import Contact from './components/pages/Contact.js';

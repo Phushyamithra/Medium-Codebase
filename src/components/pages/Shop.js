@@ -2,6 +2,7 @@ import Header from '../sections/Header.js'
 import Footer from '../sections/Footer.js'
 import ProductList from '../ProductList.js'
 import React from 'react';
+import '../../styles/Shop.css'
 
 const Shop = () => {
 

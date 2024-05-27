@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
+import '../../styles/header.css'
 
 const Header = () => {
   return (

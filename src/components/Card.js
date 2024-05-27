@@ -3,6 +3,7 @@ import { FaHeartCirclePlus } from "react-icons/fa6";
 import { MdClear } from "react-icons/md";
 import { useState } from "react";
 import Modal from "./Modal.js";
+import '../styles/Card.css'
 
 const Card = ({ index, product }) => {
 
