@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 100px;
-  background-color: rgba(255, 255, 255, 0); /* White background with 80% opacity */
-  border-bottom: 1px solid rgba(255, 255, 255, 0); /* Border matching the background opacity */
+  background-color: rgba(255, 255, 255, 0.6); /* White background with 80% opacity */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6); /* Border matching the background opacity */
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
