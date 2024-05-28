@@ -1,5 +1,5 @@
-import { FaInstagram, FaYoutube } from 'react-icons/fa'
-import '../../styles/footer.css'
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
+import '../../styles/footer.css';
 
 const Footer = () => {
     return (
@@ -27,7 +27,7 @@ const Footer = () => {
                 <a href='#'>About Us</a>
                 <a href='#'>Work with Us</a>
            </div>
-            <img src="logo.png" className="logofooter" alt="image" />
+            <img src="/logo.png" className="logofooter" alt="Logo" /> {/* Updated path */}
         </div>
     )
 }
