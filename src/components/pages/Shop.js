@@ -8,8 +8,8 @@ const Shop = () => {
 
     return (
         <>
+            <Header />
             <div className="story-container">
-                <Header />
                 <video autoPlay muted loop className="background-video">
                     <source src="Shop_bg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

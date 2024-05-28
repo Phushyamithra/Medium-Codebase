@@ -3,10 +3,16 @@
     font-family: "Playfair Display SC", serif;
     display: flex;
     color: white;
-    padding: 1px;
-    height: auto; /* Change height to auto for responsiveness */
+    /* padding: 10px; Add some padding for better spacing */
+    padding-top: 10px;
+    height: auto; /* Responsive height */
     left: 0;
     width: 100%; 
+    z-index: 3; /* Ensure it is above other content */
+    position: relative; /* Ensure it stays in the flow of the document */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 50px;
 }
 
 h4 {
@@ -24,12 +30,11 @@ a {
 }
 
 .footer img {
-    height: 10%; 
+    height: auto; 
     width: 25%; 
     margin-top: 30px;
     margin-left: 500px; 
-    margin-bottom: 10px; /* Add some bottom margin for spacing */
-    
+    margin-bottom: 50px; 
 }
 
 .shop, .support, .social, .about {

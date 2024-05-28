@@ -19,6 +19,8 @@ body, html {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: blur(10px); 
+
 }
 
 .story-content {
