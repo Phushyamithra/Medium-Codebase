@@ -4,6 +4,7 @@ import Account from './components/pages/Account.js';
 import Contact from './components/pages/Contact.js';
 import Homepage from './components/pages/HomePage.js';
 import Story from './components/pages/Story.js';
+import Product from './components/pages/Product.js'; // Import the Product component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/account" element={<Account />} />
-          {/* You can add other routes like /favorites and /cart if you have those components */}
+          <Route path="/product/:id" element={<Product />} /> {/* Add route for Product component */}
         </Routes>
       </Router>
     </div>
