@@ -19,11 +19,11 @@ const Shop = () => {
                         <h1>Themes</h1>
                     </div>
                     {/* <img src="s2.jpg" className="samplelogo" alt="sample image" /> */}
-                    <ProductList />
+                    <ProductList toShow ='theme' />
                     <div className='titleSection'>
                         <h1>Products</h1>
                     </div>
-                    <ProductList />
+                    <ProductList toShow = 'type' />
                 </div>
                 <Footer />
             </div>

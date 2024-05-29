@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import '../../styles/Product.css';
 import Header from '../sections/Header.js'; // Assuming Header component is here
 import Footer from '../sections/Footer.js'; // Assuming Footer component is here
+import { FaArrowUp,FaArrowDown,FaArrowRight,FaArrowLeft } from "react-icons/fa";
 
 const Product = () => {
     const { id } = useParams();
@@ -19,17 +20,37 @@ const Product = () => {
         return <div>Product not found</div>;
     }
 
+    const buttonUpClick = () =>{
+
+    }
+
+    const buttonDownClick =() =>{
+
+    }
+
+    const buttonRightClick =()=>{
+
+    }
+
+    const buttonLeftClick =()=>{
+
+    }
+
     return (
         <>
-            <div className="product-page">
             <Header />
+            <div className="product-page">
                 <div className="product-gallery">
+                    <FaArrowUp onClick={buttonUpClick}/>
                     <img src={product.pic} alt="Product shot 1" className="small-image" />
                     <img src={product.pic} alt="Product shot 2" className="small-image" />
                     <img src={product.pic} alt="Product shot 3" className="small-image" />
+                    <FaArrowDown onClick={buttonDownClick}/>
                 </div>
                 <div className="main-product">
+                    <FaArrowLeft onClick={buttonLeftClick}/>
                     <img src={product.pic} alt="Main product" className="main-image" />
+                    <FaArrowRight onClick={buttonRightClick}/>
                 </div>
                 <div className="product-details">
                     <h1>{product.title}</h1>
@@ -37,6 +58,7 @@ const Product = () => {
                     <p>Description: This is a comfortable and stylish {product.subtitle} perfect for all seasons. Made with high-quality materials to ensure durability and comfort.</p>
                     <button className="add-to-cart">Add to Cart</button>
                 </div>
+            </div>
                 <div className="recommendations">
                     <h2>Similar Products</h2>
                     <div className="recommendation-list">
@@ -46,7 +68,6 @@ const Product = () => {
                     </div>
                 </div>
             <Footer />
-            </div>
         </>
     );
 }
