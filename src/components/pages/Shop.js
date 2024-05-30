@@ -3,6 +3,8 @@ import Footer from '../sections/Footer.js'
 import ProductList from '../ProductList.js'
 import React from 'react';
 import '../../styles/Shop.css'
+import items from '../Data/items.js';
+import themes from '../Data/themes.js';
 
 const Shop = () => {
 
@@ -19,11 +21,11 @@ const Shop = () => {
                         <h1>Themes</h1>
                     </div>
                     {/* <img src="s2.jpg" className="samplelogo" alt="sample image" /> */}
-                    <ProductList toShow ='theme' />
+                    <ProductList data={themes} type="themes"/>
                     <div className='titleSection'>
                         <h1>Products</h1>
                     </div>
-                    <ProductList toShow = 'type' />
+                    <ProductList data={items} type="products" />
                 </div>
                 <Footer />
             </div>

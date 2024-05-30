@@ -2,11 +2,11 @@ import '../styles/Arrow.css'
 
 export const LeftArrow = ({handleLeftClick}) => {
     return (
-    <div class="center-con" onClick={handleLeftClick} >
-        <div class="roundLeft">
+    <div className="center-con" onClick={handleLeftClick} >
+        <div className="roundLeft">
             {/* <div id="cta"> */}
-                <span class="arrow primera next "></span>
-                <span class="arrow segunda next "></span>
+                <span className="arrow primera next "></span>
+                <span className="arrow segunda next "></span>
             {/* </div> */}
         </div>
     </div>
@@ -14,11 +14,11 @@ export const LeftArrow = ({handleLeftClick}) => {
 }
 export const RightArrow = ({handleRightClick}) => {
     return (
-    <div class="center-con" onClick={handleRightClick} >
-        <div class="round">
+    <div className="center-con" onClick={handleRightClick} >
+        <div className="round">
             {/* <div id="cta"> */}
-                <span class="arrow primera next "></span>
-                <span class="arrow segunda next "></span>
+                <span className="arrow primera next "></span>
+                <span className="arrow segunda next "></span>
             {/* </div> */}
         </div>
     </div>
