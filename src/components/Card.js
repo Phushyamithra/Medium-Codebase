@@ -1,4 +1,3 @@
-import { useState } from "react";
 import '../styles/Card.css';
 
 const Card = ({ product }) => {

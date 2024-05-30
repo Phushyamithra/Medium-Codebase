@@ -14,7 +14,11 @@
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    rotate: 180deg
+    rotate: 180deg;
+    /* padding: 2%; */
+    padding-top: 0%;
+    margin-top: -6%;
+    margin-left: -4%;
 }
 
 .round{
@@ -23,6 +27,8 @@
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    margin-bottom: 6%;
+    margin-right: 10%;
 }
 
 #cta{
