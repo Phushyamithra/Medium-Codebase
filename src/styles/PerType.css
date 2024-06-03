@@ -1,0 +1,12 @@
+.type-list {
+    display: table;
+    align-items: center;
+    overflow: hidden; /* Ensure no overflow */
+    padding: 10px;
+  }
+  
+  .item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    box-sizing: border-box; /* Center the card within the grid item */
+  }

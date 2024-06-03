@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-body {
-  margin: 0;
-  font-family: 'Courier Prime', monospace;
-  /* overflow: hidden; Prevent scroll bars from appearing */
-}
 
 .container {
   position: relative;
@@ -13,7 +8,7 @@ body {
   overflow: hidden;
 }
 
-.header {
+.container .header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -21,7 +16,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
 }
 
-.video-background {
+.container .video-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +32,7 @@ body {
   object-fit: cover;
 }
 
-.content {
+.container .content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,14 +44,14 @@ body {
   justify-content: center;
 }
 
-.typewriter-container {
+.content .typewriter-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.typewriter p {
-  overflow: hidden;
+.typewriter-container .typewriter p {
+  /* overflow: hidden; */
   border-right: .15em solid #ffffff; /* Light color for the cursor */
   white-space: nowrap;
   margin: 0 auto; /* Center typewriter content */

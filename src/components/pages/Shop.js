@@ -4,7 +4,6 @@ import ProductList from '../ProductList.js'
 import React from 'react';
 import '../../styles/Shop.css'
 import items from '../Data/items.js';
-import themes from '../Data/themes.js';
 
 const Shop = () => {
 
@@ -17,11 +16,6 @@ const Shop = () => {
                     Your browser does not support the video tag.
                 </video>
                 <div className="story-content">
-                    <div className='titleSection'>
-                        <h1>Themes</h1>
-                    </div>
-                    {/* <img src="s2.jpg" className="samplelogo" alt="sample image" /> */}
-                    <ProductList data={themes} type="themes"/>
                     <div className='titleSection'>
                         <h1>Products</h1>
                     </div>

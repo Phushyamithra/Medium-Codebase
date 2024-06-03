@@ -6,6 +6,7 @@ import Homepage from './components/pages/HomePage.js';
 import Story from './components/pages/Story.js';
 import Product from './components/pages/Product.js'; // Import the Product component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PerType from './components/pages/PerType.js'; // Import the PerType component
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/account" element={<Account />} />
           <Route path="/product/:id" element={<Product />} /> {/* Add route for Product component */}
+          <Route path="/per-type/:type" element={<PerType />} /> {/* Add route for PerType component */}
         </Routes>
       </Router>
     </div>
