@@ -15,14 +15,14 @@
     margin-bottom: 50px;
 }
 
-h4 {
+.footer h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     margin: 2px;
     margin-bottom: 17px;
 }
 
-a {
+.footer a {
     text-decoration: none;
     color: aliceblue;
     font-size: 13px;

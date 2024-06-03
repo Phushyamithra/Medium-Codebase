@@ -1,4 +1,3 @@
-
 const items = [
         [
             {
@@ -22,13 +21,7 @@ const items = [
             type: "hoodies",
             price: "270$"
             },
-            {
-            id: 4,
-            pic: "/hoodie3.jpeg", // Adjusted path
-            theme: "Cartoon",
-            type: "hoodies",
-            price: "270$"
-            }
+
         ],
         [
             {
