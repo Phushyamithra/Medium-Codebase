@@ -48,8 +48,9 @@ const HomePage = () => {
   }, []);
 
   return (
+    <>
     <div className="container">
-      <Header />
+    <Header />
       <div className="video-background">
         <video autoPlay loop muted>
           <source src="Lowell.mp4" type="video/mp4" />
@@ -64,6 +65,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

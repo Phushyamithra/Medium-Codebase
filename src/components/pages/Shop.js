@@ -19,7 +19,7 @@ const Shop = () => {
                     <div className='titleSection'>
                         <h1>Products</h1>
                     </div>
-                    <ProductList data={items} type="products" />
+                    <ProductList data={items} type="products"/>
                 </div>
                 <Footer />
             </div>

@@ -2,11 +2,13 @@ import items from '../Data/items.js';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Card from '../Card.js';
-// import '../../styles/PerType.css'
-import '../../styles/Card.css'
+import '../../styles/Card.css';
 import { RightArrow, LeftArrow } from '../../UI/RightArrow.js';
 import { useState } from 'react';
-import  Header from '../sections/Header.js'
+import Header from '../sections/Header.js';
+import '../../styles/PerType.css';
+import BackgroundMedia from './BackgroundMedia.js';
+
 
 const PerType = () => {
   const { type } = useParams();
@@ -32,24 +34,27 @@ const PerType = () => {
     const productUrl = `/per-type/${product.type}`;
     window.open(productUrl, '_blank');
   };
-  let ind=0;
+
   return (
     <>
-      <Header/>
-      <div className="product-list">
-        <LeftArrow handleLeftClick={handlePrev} />
-        {typeProducts.slice(startIndex, startIndex + 4).map(product => (
-          <div key={ind++} className="product-item">
-            <div onClick={() => handleProductClick(product)}>
-              <Card product={product} />
-            </div>
+      <Header></Header>
+      <BackgroundMedia src={'/Product_bg.jpg'} type='image'>
+        <div className="background-container">
+          <div className="product-list">
+            <LeftArrow handleLeftClick={handlePrev} />
+            {typeProducts.slice(startIndex, startIndex + 4).map((product, index) => (
+              <div key={index} className="product-item">
+                <div onClick={() => handleProductClick(product)}>
+                  <Card product={product} />
+                </div>
+              </div>
+            ))}
+            <RightArrow handleRightClick={handleNext} />
           </div>
-        ))}
-        <RightArrow handleRightClick={handleNext} />
-      </div>
+        </div>
+      </BackgroundMedia>
     </>
   );
 }
-
 
 export default PerType;
