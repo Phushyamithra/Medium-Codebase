@@ -12,7 +12,7 @@ const Header = () => {
         <Link to="/shop" className="nav-link button_slide slide_down ">SHOP</Link>
         <Link to="/story" className="nav-link button_slide slide_down ">OUR STORY</Link>
       </div>
-      <img className="logo" src="/Half_logo.png" alt="Small Logo" />
+      <img className="nav-link logo" src="/Half_logo.png" alt="Small Logo" />
       <div className="nav-menu">
         <Link to="/contact" className="nav-link button_slide slide_down ">CONTACT</Link>
         <Link to="/account" className="nav-link button_slide slide_down ">ACCOUNT</Link>
