@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../sections/Header';
 import '../../styles/Homepage.css';
+import BackgroundMedia from './BackgroundMedia';
 
 const texts = [
   "Swagatham.   "
@@ -51,6 +52,7 @@ const HomePage = () => {
     <>
     <div className="container">
     <Header />
+  
       <div className="video-background">
         <video autoPlay loop muted>
           <source src="Lowell.mp4" type="video/mp4" />

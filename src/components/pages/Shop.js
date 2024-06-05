@@ -4,6 +4,7 @@ import ProductList from '../ProductList.js'
 import React from 'react';
 import '../../styles/Shop.css'
 import items from '../Data/items.js';
+import BackgroundMedia from './BackgroundMedia.js';
 
 const Shop = () => {
 
@@ -11,18 +12,16 @@ const Shop = () => {
         <>
             <Header />
             <div className="story-container">
-                <video autoPlay muted loop className="background-video">
-                    <source src="Shop_bg.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <div className="story-content">
-                    <div className='titleSection'>
-                        <h1>Products</h1>
+                <BackgroundMedia src={'./Shop_bg.mp4'} type='video'>
+                    <div className="story-content">
+                        <div className='titleSection'>
+                            <h1>Products</h1>
+                        </div>
+                        <ProductList data={items} type="products" />
                     </div>
-                    <ProductList data={items} type="products"/>
-                </div>
-                <Footer />
+                </BackgroundMedia>
             </div>
+            <Footer />
         </>
     )
 }

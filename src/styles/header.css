@@ -1,33 +1,32 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 3%;
+  justify-content: center;
+  margin-top: 4%;
   padding: 7px 10px;
-  background-color: transparent; /* Transparent background */
+  background-color: transparent;
   font-optical-sizing: auto;
   font-weight: bolder;
   font-style: unset;
   position: relative;
 }
+
 .button_slide {
-  color: #ffffff; /* Initial text color */
+  color: #ffffff;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 7px 15px;
   font-family: "Kanit", sans-serif;
-  font-weight : bold;
+  font-weight: bold;
   font-size: 10px;
   letter-spacing: 0.2px;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #FFF;
-  -webkit-transition: box-shadow 0.4s ease-out, color 0.4s ease-out; /* Added color transition */
-  -moz-transition: box-shadow 0.4s ease-out, color 0.4s ease-out; /* Added color transition */
-  transition: box-shadow 0.009s ease-out, color 0.009s ease-out; /* Added color transition */
+  transition: box-shadow 0.04s ease-out, color 0.04s ease-out;
 }
 
 .slide_down:hover {
   box-shadow: inset 0 100px 0 0 #ffffffd1;
-  color: black; /* Change text color to black on hover */
+  color: black;
 }
 
 .header-container .nav-menu {
@@ -35,18 +34,83 @@
   align-items: center;
   justify-content: center;
   flex: 1;
+  transition: max-height 0.3s ease-out;
+  padding: 0%;
+}
+.left{
+  /* background-color: aqua; */
+  margin-left: 15%;
+}
+.right{
+  /* background-color: red; */
+  margin-right: 15%;
 }
 
 .header-container .nav-link {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .header-container .logo {
-  width: 55px;
+  width: 70px;
   height: auto;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Center the logo horizontally */
+  margin-left: 0%;
+  margin-right: 0%;
+  transform: translateX(-50%);
+}
 
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 7px 20px;
+  }
+
+  .header-container .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .header-container .nav-menu.open {
+    max-height: 500px; /* Adjust based on the number of links */
+  }
+
+  .header-container .nav-link {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .burger-icon {
+    display: block;
+    color: white;
+    font-size: 30px;
+    position: absolute; /* Make it absolute */
+    top: 50%; 
+    transform: translateY(-50%); /* Center vertically */
+    right: 10%; /* Set right margin for spacing */
+  }
+
+  .header-container .logo {
+    position: static;
+    transform: none;
+  }
+
+  .mobile-nav-menu{
+    display: flex;
+    flex-direction:column ;
+  }
 }
