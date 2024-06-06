@@ -12,7 +12,7 @@ const Shop = () => {
         <>
             <Header />
             <div className="story-container">
-                <BackgroundMedia src={'./Shop_bg.mp4'} type='video'>
+                <BackgroundMedia src={'./renamed-shop-page.jpeg'} type='image'>
                     <div className="story-content">
                         <div className='titleSection'>
                             <h1>Products</h1>

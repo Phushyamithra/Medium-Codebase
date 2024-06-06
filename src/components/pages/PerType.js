@@ -38,7 +38,7 @@ const PerType = () => {
   return (
     <>
       <Header></Header>
-      <BackgroundMedia src={'/out.jpeg'} type='image'>
+      <BackgroundMedia src={'/renamed-product-page.jpg'} type='image'>
         <div className="background-container">
           <div className="product-list">
             <LeftArrow handleLeftClick={handlePrev} />

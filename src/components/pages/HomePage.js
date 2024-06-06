@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../sections/Header';
 import '../../styles/Homepage.css';
-import BackgroundMedia from './BackgroundMedia';
+// import BackgroundMedia from './BackgroundMedia';
 
 const texts = [
   "Swagatham.   "
@@ -53,12 +53,15 @@ const HomePage = () => {
     <div className="container">
     <Header />
   
-      <div className="video-background">
+      {/* <div className="video-background">
         <video autoPlay loop muted>
           <source src="Lowell.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
+        <div className="image-background">
+          <img src="renamed-homepage.png" alt="spidey" />
+        </div>
       <div className="content">
         <div className="typewriter-container">
           <div className="typewriter">

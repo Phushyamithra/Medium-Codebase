@@ -4,6 +4,7 @@ import '../../styles/Product.css';
 import Header from '../sections/Header.js'; // Assuming Header component is here
 import Footer from '../sections/Footer.js'; // Assuming Footer component is here
 import { FaArrowUp,FaArrowDown,FaArrowRight,FaArrowLeft } from "react-icons/fa";
+import BackgroundMedia from './BackgroundMedia.js';
 
 const Product = () => {
     const { id } = useParams();
@@ -39,6 +40,7 @@ const Product = () => {
     return (
         <>
             <Header />
+            <BackgroundMedia src={'./renamed-product-page.jpeg'} type={'image'}s>
             <div className="product-page">
                 <div className="product-gallery">
                     <FaArrowUp onClick={buttonUpClick}/>
@@ -67,6 +69,7 @@ const Product = () => {
                         <img src={product.pic} alt="Recommendation 3" className="recommendation-image" />
                     </div>
                 </div>
+            </BackgroundMedia>
             <Footer />
         </>
     );
