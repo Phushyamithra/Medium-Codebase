@@ -37,12 +37,12 @@
   transition: max-height 0.3s ease-out;
   padding: 0%;
 }
-.left{
-  /* background-color: aqua; */
+
+.left {
   margin-left: 15%;
 }
-.right{
-  /* background-color: red; */
+
+.right {
   margin-right: 15%;
 }
 
@@ -56,8 +56,6 @@
   height: auto;
   position: absolute;
   left: 50%;
-  margin-left: 0%;
-  margin-right: 0%;
   transform: translateX(-50%);
 }
 
@@ -65,26 +63,32 @@
   display: none;
   cursor: pointer;
   font-size: 24px;
-  color: #333333;
+  color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .header-container {
-    padding: 7px 20px;
+    justify-content: space-around;
+    padding: 20% 20px;
   }
 
   .header-container .nav-menu {
     position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
-    display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
-    max-height: 0;
     overflow: hidden;
+    align-items: center;
   }
-
+  .header-container .logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: -2%;
+    transform: translateX(-50%);
+  }
+  
   .header-container .nav-menu.open {
     max-height: 500px; /* Adjust based on the number of links */
   }
@@ -95,22 +99,34 @@
   }
 
   .burger-icon {
-    display: block;
-    color: white;
-    font-size: 30px;
-    position: absolute; /* Make it absolute */
-    top: 50%; 
-    transform: translateY(-50%); /* Center vertically */
-    right: 10%; /* Set right margin for spacing */
+    display: grid;
+    font-size: 35px;
+    position: absolute;
+    top: 40%; 
+    transform: translateY(-50%);
+    right: 10%;
   }
 
-  .header-container .logo {
-    position: static;
-    transform: none;
+  /* .burger-right{
+    right: 0%;
+  } */
+
+  .header-container .nav-menu.left,
+  .header-container .nav-menu.right {
+    display: none;
   }
 
-  .mobile-nav-menu{
+  .mobile-nav-menu {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-nav-menu .nav-link {
+    width: 100%;
+    margin:5% ;
+    border-radius: 3%;
+    text-align: center;
   }
 }
