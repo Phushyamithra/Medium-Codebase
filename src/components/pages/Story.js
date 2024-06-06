@@ -9,7 +9,7 @@ const Story = () => {
     <>
       <Header></Header>
     <div className="story-container">
-      <BackgroundMedia src={'/Homepage.mp4'} type='video'>
+      <BackgroundMedia src={'/renamed-our-story.jpeg'} type='image'>
         <div className="story-content">
           <h1>Our Story</h1>
           <p>Story started in the streets of Nagole, Hyderabad,

@@ -105,11 +105,8 @@
     top: 40%; 
     transform: translateY(-50%);
     right: 10%;
+    z-index: 3;
   }
-
-  /* .burger-right{
-    right: 0%;
-  } */
 
   .header-container .nav-menu.left,
   .header-container .nav-menu.right {
@@ -124,9 +121,14 @@
   }
 
   .mobile-nav-menu .nav-link {
-    width: 100%;
-    margin:5% ;
-    border-radius: 3%;
+    width: 30%; /* Reduce width to provide some margin */
+    margin: 5%;
+    border-radius: 5%;
     text-align: center;
+    z-index: 3; /* Ensure links are clickable */
+    /* background-color: black; */
+    color: white; /* Ensure text is visible on black background */
+    padding: 10px 0; /* Adjust padding for better touch targets */
   }
+
 }
