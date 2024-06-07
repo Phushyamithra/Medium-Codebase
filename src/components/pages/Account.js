@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../sections/Header.js'
-import Footer from '../sections/Footer.js'
 import BackgroundMedia from './BackgroundMedia.js'
+import NewFooter from '../sections/NewFooter.js';
 
 const Account = () => {
   return (
@@ -10,7 +10,7 @@ const Account = () => {
       <BackgroundMedia src={'./renamed-account-page.jpg'} type='image'>
 
       </BackgroundMedia>
-      <Footer/>
+      <NewFooter/>
     </>
   )
 }

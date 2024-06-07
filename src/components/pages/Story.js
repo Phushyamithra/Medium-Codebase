@@ -3,14 +3,13 @@ import '../../styles/Story.css';
 import Header from '../sections/Header.js';
 import BackgroundMedia from './BackgroundMedia.js';
 import NewFooter from '../sections/NewFooter.js';
+import StandardPage from './StandardPage.js';
 
 const Story = () => {
   return (
     <>
-      <div className="story-main-container">
-        <Header></Header>
-          <BackgroundMedia src={'/renamed-our-story.jpg'} type='image'>
-            <div className="story-content">
+      <StandardPage src={'/renamed-our-story.jpg'} type='image' >
+        <div className="story-content">
               <h1>Our Story</h1>
               <p>Story started in the streets of Nagole, Hyderabad,
                 before life took Gopal to the shores of America.
@@ -23,16 +22,13 @@ const Story = () => {
                 would be dedicated to not only a Telugu,
                 but to every Bhārtiyan who lives the true Bhārtiyan way of life.
                 It is a tribute to our parents who made it so far in this world,
-                despite their percived cultural shortcomings. We are Desi,
+                despite their percived cultural shortcomings. We are Desi,src/styles/Story.css
                 and we`re gonna show off every bit of it. Wherever you are,
                 whatever corner you are in, your love of Bhāratiyan culture is what will
                 make this project a success.
               </p>
-
-            </div>
-          </BackgroundMedia>
-        <NewFooter />
-      </div>
+              </div>
+      </StandardPage>
     </>
   );
 }

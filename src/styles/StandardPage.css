@@ -1,0 +1,16 @@
+/* Main container uses grid layout */
+.main-container {
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .content {
+    padding: 2%;
+    margin: 20px auto; /* Center the content horizontally */
+    max-width: 1300px; /* Maximum width for content */
+  }
+
+  
+  
