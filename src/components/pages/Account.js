@@ -7,7 +7,7 @@ const Account = () => {
   return (
     <>
       <Header/>
-      <BackgroundMedia src={'./renamed-account-page.png'} type='image'>
+      <BackgroundMedia src={'./renamed-account-page.jpg'} type='image'>
 
       </BackgroundMedia>
       <Footer/>
