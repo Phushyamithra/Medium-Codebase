@@ -1,17 +1,10 @@
-/* Main container uses grid layout */
-.story-main-container {
-  display: grid;
-  grid-template-rows: auto 2fr auto;
-  height: 100vh;
-  overflow-y: auto;
-}
-
 .story-content {
   padding: 20px;
   margin: 20px auto; /* Center the content horizontally */
-  max-width: 1200px; /* Example maximum width for content */
+  max-width: 1300px; /* Maximum width for content */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
   border-radius: 15px;
+  overflow-y: visible;
 }
 
 .story-content h1 {
@@ -23,6 +16,4 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
-} 
-
-
+}
