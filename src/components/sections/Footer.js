@@ -1,4 +1,5 @@
 import { FaInstagram, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import '../../styles/footer.css';
 
 const Footer = () => {
@@ -6,29 +7,34 @@ const Footer = () => {
         <div className="footer">
             <div className="social">
                 <h4>Our Socials</h4>
-                <a href='#'><FaInstagram style={{ color: '#E1306C', fontSize: '20px' }} />Instagram</a>
-                <a href='#'><FaYoutube style={{ color: '#FF0000', fontSize: '20px' }} />Youtube</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram style={{ color: '#E1306C', fontSize: '20px' }} />Instagram
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                    <FaYoutube style={{ color: '#FF0000', fontSize: '20px' }} />Youtube
+                </a>
             </div>
             <div className="support">
                 <h4>Support</h4>
-                <a href='#'>FAQ's</a>
-                <a href='#'>International Orders</a>
-                <a href='#'>Contact us</a>
-                <a href='#'>Refund policy</a>
+                <Link to="/faqs">FAQ's</Link>
+                <Link to="/international-orders">International Orders</Link>
+                <Link to="/contact-us">Contact us</Link>
+                <Link to="/refund-policy">Refund policy</Link>
             </div>
             <div className="shop">
                 <h4>Shop</h4>
-                <a href='#'>Tshirts</a>
-                <a href='#'>Hoodies</a>
-                <a href='#'>SweatShirts</a>
+                <a href="/perproduct.js" target="_blank" rel="noopener noreferrer">Tshirts</a>
+                <a href="/perproduct.js" target="_blank" rel="noopener noreferrer">Hoodies</a>
+                <a href="/perproduct.js" target="_blank" rel="noopener noreferrer">SweatShirts</a>
             </div>
             <div className="about">
                 <h4>About </h4>
-                <a href='#'>About Us</a>
-                <a href='#'>Work with Us</a>
+                <Link to="/about-us">About Us</Link>
+                <Link to="/work-with-us">Work with Us</Link>
            </div>
-            <img src="/logo.png" className="logofooter" alt="Logo" /> {/* Updated path */}
+            <img src="/logo.png" className="logofooter" alt="Logo" />
         </div>
     )
 }
+
 export default Footer;

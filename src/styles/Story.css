@@ -1,24 +1,26 @@
-.story-container {
-    position: relative;
-    height: 100vh;
-    overflow: auto;
-}
+.story-main-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    filter: blur(2.75px); 
-
-}
-
-.story-content {
-    position: relative;
+  
+  /* Style for the story content section */
+  .story-content {
     padding: 20px;
-    background: rgba(255, 255, 255, 0); /* Optional: Add a semi-transparent background to make text readable */
-    box-sizing: border-box;
+    margin: 20px auto; /* Center the content horizontally */
+    max-width: 1200px; /* Example maximum width for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
+    border-radius: 15px;
 }
+  
+  .story-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .story-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  

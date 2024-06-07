@@ -66,10 +66,11 @@
   color: #ffffff;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 700px) {
   .header-container {
     justify-content: space-around;
     padding: 20% 20px;
+    width:100%;
   }
 
   .header-container .nav-menu {

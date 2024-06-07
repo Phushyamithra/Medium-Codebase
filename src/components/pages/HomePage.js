@@ -4,7 +4,8 @@ import '../../styles/Homepage.css';
 // import BackgroundMedia from './BackgroundMedia';
 
 const texts = [
-  "Swagatham.   "
+  "Swagatham.   ",
+  "స్వాగతం.   "
 ];
 
 const HomePage = () => {
@@ -60,7 +61,7 @@ const HomePage = () => {
         </video>
       </div> */}
         <div className="image-background">
-          <img src="renamed-homepage.png" alt="spidey" />
+          <img src="renamed-homepage.jpg" alt="spidey" />
         </div>
       <div className="content">
         <div className="typewriter-container">
