@@ -1,5 +1,5 @@
-live link : https://phushyamithra.github.io/Medium-Codebase/
-
+live link : [https://phushyamithra.github.io/Medium-Codebase/
+](https://medium-codebase.vercel.app/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
