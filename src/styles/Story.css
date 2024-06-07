@@ -1,26 +1,28 @@
+/* Main container uses grid layout */
 .story-main-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  
-  /* Style for the story content section */
-  .story-content {
-    padding: 20px;
-    margin: 20px auto; /* Center the content horizontally */
-    max-width: 1200px; /* Example maximum width for content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
-    border-radius: 15px;
+  display: grid;
+  grid-template-rows: auto 2fr auto;
+  height: 100vh;
+  overflow-y: auto;
 }
-  
-  .story-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .story-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
+
+.story-content {
+  padding: 20px;
+  margin: 20px auto; /* Center the content horizontally */
+  max-width: 1200px; /* Example maximum width for content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
+  border-radius: 15px;
+}
+
+.story-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.story-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+} 
+
+
