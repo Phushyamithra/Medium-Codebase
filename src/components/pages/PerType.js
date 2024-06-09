@@ -5,9 +5,8 @@ import Card from '../Card.js';
 import '../../styles/Card.css';
 import { RightArrow, LeftArrow } from '../../UI/RightArrow.js';
 import { useState } from 'react';
-import Header from '../sections/Header.js';
 import '../../styles/PerType.css';
-import BackgroundMedia from './BackgroundMedia.js';
+import StandardPage from './StandardPage.js';
 
 
 const PerType = () => {
@@ -37,8 +36,7 @@ const PerType = () => {
 
   return (
     <>
-      <Header></Header>
-      <BackgroundMedia src={'/renamed-product-page.jpg'} type='image'>
+      <StandardPage src={'/renamed-product-page.jpg'} type='image'>
         <div className="background-container">
           <div className="product-list">
             <LeftArrow handleLeftClick={handlePrev} />
@@ -52,7 +50,7 @@ const PerType = () => {
             <RightArrow handleRightClick={handleNext} />
           </div>
         </div>
-      </BackgroundMedia>
+      </StandardPage>
     </>
   );
 }

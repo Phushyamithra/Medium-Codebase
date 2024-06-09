@@ -1,8 +1,5 @@
 import React from 'react'
 import '../../styles/Story.css';
-import Header from '../sections/Header.js';
-import BackgroundMedia from './BackgroundMedia.js';
-import NewFooter from '../sections/NewFooter.js';
 import StandardPage from './StandardPage.js';
 
 const Story = () => {

@@ -1,16 +1,12 @@
 import React from 'react'
-import Header from '../sections/Header.js'
-import BackgroundMedia from './BackgroundMedia.js'
-import NewFooter from '../sections/NewFooter.js';
+import StandardPage from './StandardPage.js';
 
 const Account = () => {
   return (
     <>
-      <Header/>
-      <BackgroundMedia src={'./renamed-account-page.jpg'} type='image'>
-
-      </BackgroundMedia>
-      <NewFooter/>
+      <StandardPage src={'./renamed-account-page.jpg'} type='image'>
+      
+      </StandardPage>
     </>
   )
 }
