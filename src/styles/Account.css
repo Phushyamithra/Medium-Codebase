@@ -1,0 +1,7 @@
+.main-container {
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
