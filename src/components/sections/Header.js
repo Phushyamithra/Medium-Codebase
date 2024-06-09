@@ -25,7 +25,8 @@ const Header = () => {
         <Link to="/cart" className="nav-link button_slide slide_down "><FaShoppingCart /></Link>
       </div>
 
-      <TiThListOutline className='burger-icon burger-right ' onClick={toggleMenu} />
+      <TiThListOutline className='burger-icon burger-right' onClick={toggleMenu} />
+      {isOpen && <div className="background-overlay" onClick={toggleMenu}></div>}
       {
         isOpen && (
           <div className="mobile-nav-menu">
