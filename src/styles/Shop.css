@@ -1,35 +1,85 @@
-.story-container {
-    position: relative;
-    min-height: 100vh; 
-    padding-bottom: 60px; 
-    margin-bottom: 20%;
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    margin-left: 3%;
 }
-.story-content {
-    position: relative;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0);
-    box-sizing: border-box;
-}
-.titleSection h1 {
+h2{
     text-align: center;
-    margin-top: 5%;
-    font-size: 30px;
-    color: #333;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 13px;
-    translate:180%;
-    position: absolute;
+    margin-top: 30px;
+}
+.category-item {
+    background: rgba(255, 255, 255, 0.9); /* This will be overridden by JS */
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 0 15px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
 }
 
-.titleSection h1::after {
-    content: ""; 
+.category-item img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 14px;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+}
+
+.category-item h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Drops Section */
+.drops {
+    text-align: center;
+}
+
+.drops h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.drop-item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.drop-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.drop-item h3 {
     position: absolute;
-    bottom: -10px;
-    left: 47%; 
-    transform: translateX(-50%);
-    width: 180px;
-    height: 3px;
-    background-color: #333;
-    margin-bottom: 0px;
-}     
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.drop-item:hover img {
+    transform: scale(1.1);
+}
