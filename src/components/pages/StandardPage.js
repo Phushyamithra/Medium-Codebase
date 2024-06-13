@@ -9,9 +9,7 @@ const StandardPage = ({src,type,children}) => {
           <div className="main-container">
             <Header></Header>
               <BackgroundMedia src={src} type={type}>
-                <div className="content">
-                  {children}
-                </div>
+                {children}
               </BackgroundMedia>
             <NewFooter />
           </div>
