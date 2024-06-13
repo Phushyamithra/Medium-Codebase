@@ -83,14 +83,34 @@
 
 /* Smartphones */
 @media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    position: relative;
+  }
+  .footer-links{
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .footer-item {
+    margin: 5px; /* Adjust margins for better spacing on small screens */
+  }
   .footer-item .links {
     width: 60px;
     height: 60px;
-    line-height: 70px;
+    line-height: 60px;
     font-size: 30px;
+    padding-bottom: 0%;
+    margin-bottom: 1px;
+    border: 0%;
   }
   
   .footerLogo {
+    margin: 0px;
+    padding: 0px;
     width: 80%; /* Adjust the width for smaller screens */
   }
 
@@ -101,7 +121,7 @@
 }
 
 /* iPad and above */
-@media (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 768px){
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
