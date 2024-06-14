@@ -12,7 +12,10 @@ const BackgroundMedia = ({src,type,children}) => {
           ) : (
             <img src={src} alt="Background" className="background-image" />
           )}
+          <div className="content">
             {children}
+
+          </div>
         </div>
       );
 }
