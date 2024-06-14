@@ -121,7 +121,7 @@
 }
 
 /* iPad and above */
-@media (max-width: 1024px) and (min-width: 768px){
+@media (min-width: 768px){
   .footer-container {
     flex-direction: row;
     justify-content: space-between;

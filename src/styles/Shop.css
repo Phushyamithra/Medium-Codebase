@@ -21,12 +21,18 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    /* margin-left: 3%; */
+    margin-top: 3%;
+    padding-top: 0%;
+    border: 0;
+    transition: filter 0.3s ease-in-out;
+
 }
 
 h2 {
     text-align: center;
     margin-top: 5%;
+    font-size: 30px;
+    
 }
 
 .category-item {
@@ -67,6 +73,7 @@ h2 {
     text-align: center;
     width: 1200px;
     height: 9%;
+    margin-top: 4%;
 }
 
 /* Slider Section */
@@ -149,24 +156,39 @@ h2 {
 /* Media Queries */
 
 /* Tablets */
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 601px) and (max-width: 1025px) {
     .shop-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20%;
+        margin-top: 0%;
         padding: 0;
         border: 0;
-    }
     
+    }
+    h2{
+        font-size: 50px;
+    }
     .category-item {
-        flex: 1 1 calc(50% - 30px); /* Two items per row */
-        margin:15px;
+        flex: 2 2 60%; /* One item per row */
+        margin: 5px 5px 10px 5px ;
+        padding: 20px;
         flex-direction: column;
-    }
 
+    }
     
-    .category-item:hover {
+    .category-item img {
+        margin: 0px 0;
+        max-width: 100px;
+        height: auto;
+        border-radius: 50%;
+    }
+    .category-item h3{
+        font-size: 45px;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .category-item:hover, .category-item:focus, .category-item:active {
         transform: translateY(-10px);
     }
     .drops {
@@ -175,9 +197,10 @@ h2 {
 
     .slider {
         height: 200px; /* Adjust slider height for tablets */
-        width: 950px;  /* Ensure full width */
-        margin-left: 90px;
+        width: 990px;  /* Ensure full width */
+        margin-left: 190px;
     }
+
 
     .slide h3 {
         font-size: 30px; /* Adjust font size for tablets */
@@ -190,30 +213,41 @@ h2 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 60%;
+        margin-top: 35%;
+        padding: 4%;
     }
-    
+    h2{
+        margin: 0px;
+    }
     .category-item {
-        flex: 1 1 100%; /* One item per row */
-        margin: 5px 0 0 0 ;
+        flex: 2 2 30%; /* One item per row */
+        margin: 5px 5px 10px 5px ;
         padding: 0px;
+        flex-direction: column;
+
     }
 
     .category-item img {
         margin: 0px 0;
+        max-width: 100px;
+        height: auto;
+        border-radius: 50%;
     }
     .category-item h3{
-        text-align: left    ;
+        margin-top: 10px;
+        text-align: left;
     }
     .drops {
         width: 100%;
         padding: 0;
         margin-bottom: 100px;
+        padding-left: 0px;
+        padding-right: 90px;
     }
 
     .slider {
         height: 150px; /* Adjust slider height for smartphones */
-        width: 120%;  /* Ensure full width */
+        width: 150%;  /* Ensure full width */
     }
 
     .slider-button {
