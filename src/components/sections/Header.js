@@ -3,11 +3,25 @@ import { Link } from 'react-router-dom';
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import { TiThListOutline } from "react-icons/ti";
 import '../../styles/header.css';
+import Cart from '../pages/Cart';
+import sweat_side from '../../Assets/shop-assets/sweat_side.png';
+import hoodie_side from '../../Assets/shop-assets/hoodie_side.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // Initial state: menu closed
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const [cartVisible, setCartVisible] = useState(false);
+  const [cartItems, setCartItems] = useState([
+      { name: 'The ReTrack Half-Zip Sweatshirt', size: 'Medium', color: 'Heather Grey', price: 98, quantity: 1, image: hoodie_side },
+      { name: 'The ReTrack Jogger', size: 'Small', color: 'Heather Grey', price: 98, quantity: 1, image: sweat_side }
+  ]);
+
+  // Function to toggle cart visibility
+  const toggleCart = () => {
+    setCartVisible(!cartVisible);
   };
 
   return (
@@ -22,7 +36,7 @@ const Header = () => {
         <Link to="/contact" className="nav-link button_slide slide_down ">CONTACT</Link>
         <Link to="/account" className="nav-link button_slide slide_down ">ACCOUNT</Link>
         <Link to="/favorites" className="nav-link button_slide slide_down "><FaHeart /></Link>
-        <Link to="/cart" className="nav-link button_slide slide_down "><FaShoppingCart /></Link>
+        <span className="nav-link button_slide slide_down "><FaShoppingCart onClick={toggleCart}/></span> {/* <-- Changed Link to span to prevent page navigation */}
       </div>
 
       <TiThListOutline className='burger-icon burger-right' onClick={toggleMenu} />
@@ -36,10 +50,11 @@ const Header = () => {
             <Link to="/contact" className="nav-link button_slide slide_down ">CONTACT</Link>
             <Link to="/account" className="nav-link button_slide slide_down ">ACCOUNT</Link>
             <Link to="/favorites" className="nav-link button_slide slide_down ">WISHLIST</Link>
-            <Link to="/cart" className="nav-link button_slide slide_down ">CART</Link>
+            <span className="nav-link button_slide slide_down " onClick={toggleCart}>CART</span> {/* <-- Changed Link to span and added onClick handler */}
           </div>
         )
       }
+      {cartVisible && <Cart items={cartItems} onClose={toggleCart} />} {/* <-- Conditional rendering of Cart */}
     </div>
   );
 }
