@@ -27,7 +27,7 @@
   display: inline-block;
   width: 60px;
   height: 60px;
-  line-height: 70px; /* Center the icon vertically */
+  line-height: 55px; /* Center the icon vertically */
   background: #333;
   border-radius: 50%;
   font-size: 30px;
