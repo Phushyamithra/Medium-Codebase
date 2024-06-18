@@ -1,0 +1,120 @@
+/* General Styles */
+.contact-page {
+    margin-top: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Contact Form Styles */
+.contact-container, .faq-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden; /* Remove scrollbars */
+}
+
+.contact-container h1, .faq-container h1 {
+    text-align: center;
+    color: #4b3a27;
+    font-family: 'Garamond', serif;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b3a27;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4b3a27;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #4b3a27;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4b3a27;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b2a1a;
+}
+
+/* FAQ Toggle Styles */
+.faq-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #4b3a27;
+    margin-top: 20px;
+}
+
+.faq-toggle p {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+/* FAQ Styles */
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    color: #4b3a27;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    color: #3b2a1a;
+    margin-left: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-container, .faq-container {
+        padding: 15px;
+    }
+
+    .faq h3, .faq p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container, .faq-container {
+        padding: 10px;
+    }
+
+    .faq h3, .faq p {
+        font-size: 0.9rem;
+    }
+}
