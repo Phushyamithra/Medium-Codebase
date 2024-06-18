@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Cart.css';
 
-const Cart = ({ items, onClose }) => {
+const Cart = ({ items, onClose, onRemove }) => {
     const calculateTotal = () => {
         return items.reduce((total, item) => total + item.price * item.quantity, 0);
     };
@@ -24,8 +24,8 @@ const Cart = ({ items, onClose }) => {
                                     <span>{item.quantity}</span>
                                     <button>+</button>
                                 </div>
+                             <button className="remove-button" onClick={() => onRemove(index)}>Remove</button>
                             </div>
-                            <button className="remove-button">Remove</button>
                         </div>
                     ))}
                 </div>
