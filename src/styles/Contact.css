@@ -6,6 +6,7 @@
     justify-content: center;
     width: 100%;
     padding: 20px;
+    overflow: hidden;
 }
 
 /* Contact Form Styles */
