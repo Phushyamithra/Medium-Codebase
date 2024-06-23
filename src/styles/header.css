@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-container {
+  @apply  flex
+    flex-row
+    justify-center
+    mt-0 mb-4
+    p-0
+    bg-transparent
+    font-bold
+    transition-all
+    duration-300
+    ease-in-out
+    top-4
+    fixed
+    z-30
+}
+
+.button_slide {
+  @apply
+    text-white
+    rounded-full
+    px-5
+    py-2
+    font-kanit
+    font-bold
+    /* text-7xl */
+    tracking-wide
+    cursor-pointer
+    transition-box-shadow-color
+    duration-40
+    ease-out
+    mx-2
+}
+
+.slide_down:hover,
+.slide_down:focus,
+.slide_down:active {
+  @apply
+    shadow-inset-custom
+    text-black;
+}
+
+.nav-menu {
+  @apply
+    flex
+    items-center
+    justify-center
+    duration-300
+    ease-out
+    p-4
+    z-40
+}
+
+
+.right {
+  @apply ml-44;
+}
+
+.header-container .nav-link {
+  @apply text-base;
+}
+
+.header-container .logo {
+  @apply
+    w-20
+    h-auto
+    absolute
+    left-1/2
+    transform
+    -translate-x-1/2
+    z-40
+}
+
+.burger-icon {
+  @apply
+    hidden
+    cursor-pointer
+    text-xs
+    text-white
+}
+
+.background-overlay {
+  @apply
+    fixed
+    top-0
+    left-0
+    w-full
+    h-full
+    bg-black
+    bg-opacity-50
+    backdrop-blur-md
+    z-20
+    hidden
+}
+
+.header-container.open .background-overlay {
+  @apply block;
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header-container {
+    @apply
+      flex-col
+      justify-stretch
+      px-20
+      mb-4
+  }
+
+  .header-container .nav-menu {
+    @apply
+      flex-col
+      justify-stretch
+      absolute
+      w-full
+      bg-white
+      overflow-hidden
+      items-center
+  }
+
+  .header-container .logo {
+    @apply
+      w-40
+      top-4;
+  }
+
+  .burger-icon {
+    @apply
+      flex 
+      text-3xl
+      absolute
+      -right-60
+      top-20
+      z-40
+
+  }
+
+  .header-container .nav-menu.left,
+  .header-container .nav-menu.right {
+    @apply hidden;
+  }
+
+  .mobile-nav-menu {
+    @apply
+      flex
+      flex-col
+      w-full
+      mt-80
+      z-40
+  }
+
+  .mobile-nav-menu .nav-link {
+    @apply text-5xl;
+  }
+}
+
+/* smartphones */
+@media (max-width: 600px) {
+  .header-container {
+    @apply
+      flex-col
+      justify-stretch
+      px-20
+      mb-20
+      z-10;
+  }
+
+  .header-container .logo {
+    @apply
+      w-32
+      left-1/2
+  }
+
+  .header-container .nav-menu {
+    @apply
+      hidden
+      flex-col
+      items-center
+      bg-white
+      absolute
+      top-full
+      w-full
+      z-40
+  }
+
+  .header-container .nav-link {
+    @apply text-3xl;
+  }
+
+  .burger-icon {
+    @apply
+      flex 
+      text-3xl
+      absolute
+      -right-20
+      top-12
+      z-40
+  }
+
+  .mobile-nav-menu {
+    @apply
+      flex
+      flex-col
+      w-full
+      mt-80
+      z-40
+      mr-7;
+  }
+
+  .header-container .nav-menu.open {
+    @apply
+      flex
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-container {
+    @apply
+      justify-between
+      px-10;
+  }
+
+  .header-container .nav-menu {
+    @apply flex-row
+    z-40
+  }
+
+}

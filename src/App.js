@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import StoryPage from './components/Pages/StoryPage';
+import ShopPage from './components/Pages/ShopPage';
+import ContactPage from './components/Pages/ContactPage';
+import AccountPage from './components/Pages/AccountPage';
+import WishListPage from './components/Pages/WishListPage';
+import HomePage from './components/Pages/HomePage';
 
-function App() {
+const App=()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/story" element={<StoryPage />} />
+          <Route path="/shop" element={<ShopPage/>} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/wishlist" element={<WishListPage/>}/>
+          {/* <Route path="/product/:id" element={<Product />} /> 
+          <Route path="/per-type/:type" element={<PerType />} />  */}
+        </Routes>
+      </Router>
     </div>
   );
 }
