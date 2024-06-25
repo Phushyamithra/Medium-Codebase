@@ -4,7 +4,7 @@
 
 /* Footer section */
 .footer-container {
-  @apply w-full bg-[#2B1A3A] flex flex-row p-5 m-0 bottom-0 fixed;
+  @apply w-full bg-[#2B1A3A] flex flex-row p-5 m-0 bottom-0 ;
 }
 
 .footer-links {
