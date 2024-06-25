@@ -1,25 +1,26 @@
 import './styles/App.css';
-import Shop from './components/pages/Shop.js';
-import Account from './components/pages/Account.js';
-import Contact from './components/pages/Contact.js';
-import Homepage from './components/pages/HomePage.js';
-import Story from './components/pages/Story.js';
-import Product from './components/pages/Product.js'; // Import the Product component
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PerType from './components/pages/PerType.js'; // Import the PerType component
+import StoryPage from './components/Pages/StoryPage';
+import ShopPage from './components/Pages/ShopPage';
+import ContactPage from './components/Pages/ContactPage';
+import AccountPage from './components/Pages/AccountPage';
+import WishListPage from './components/Pages/WishListPage';
+import HomePage from './components/Pages/HomePage';
 
-function App() {
+const App=()=> {
   return (
     <div className="App">
+
       <Router>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/story" element={<Story />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/product/:id" element={<Product />} /> {/* Add route for Product component */}
-          <Route path="/per-type/:type" element={<PerType />} /> {/* Add route for PerType component */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/story" element={<StoryPage />} />
+          <Route path="/shop" element={<ShopPage/>} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/wishlist" element={<WishListPage/>}/>
+          {/* <Route path="/product/:id" element={<Product />} /> 
+          <Route path="/per-type/:type" element={<PerType />} />  */}
         </Routes>
       </Router>
     </div>

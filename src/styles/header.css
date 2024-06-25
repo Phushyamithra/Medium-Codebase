@@ -1,252 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4%;
-  margin-bottom: 4%;
-  padding: 7px 10px;
-  background-color: transparent;
-  font-optical-sizing: auto;
-  font-weight: bolder;
-  font-style: unset;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  left:-.8%;
-  right: 0%;
+  @apply justify-center px-10 flex flex-row h-24 w-full items-center bg-transparent font-bold transition-all duration-300 ease-in-out z-30 fixed;
 }
 
 .button_slide {
-  color: #ffffff;
-  border-radius: 20px;
-  padding: 7px 15px;
-  font-family: "Kanit", sans-serif;
-  font-weight: bold;
-  font-size: 10px;
-  letter-spacing: 0.2px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #FFF;
-  transition: box-shadow 0.04s ease-out, color 0.04s ease-out;
+  @apply text-white rounded-full px-5 py-2 font-bold tracking-wide cursor-pointer transition-box-shadow-color duration-40 ease-out mx-2;
 }
 
-.slide_down:hover, .slide_down:focus, .slide_down:active {
-  box-shadow: inset 0 100px 0 0 #ffffffd1;
-  color: black;
+.slide_down:hover,
+.slide_down:focus,
+.slide_down:active {
+  @apply shadow-inset-custom text-black;
 }
 
-.header-container .nav-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  transition: max-height 0.3s ease-out;
-  padding: 0%;
-}
-
-.left {
-  margin-left: 12%;
-}
-
-.right {
-  margin-right: 7%;
+.nav-menu {
+  @apply  flex-row flex items-center justify-center duration-300 ease-out p-4 z-40;
 }
 
 .header-container .nav-link {
-  text-decoration: none;
-  font-size: 17px;
+  @apply text-base;
 }
 
 .header-container .logo {
-  width: 70px;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  @apply w-20 h-auto;
 }
 
 .burger-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 1px;
-  color: #ffffff;
+  @apply hidden cursor-pointer text-xs text-white;
 }
 
-/* Background overlay for blur effect */
+.logoMedia {
+  @apply hidden;
+}
+
 .background-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  z-index: 2;
-  display: none;
+  @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-md z-20 hidden;
 }
 
 .header-container.open .background-overlay {
-  display: block;
+  @apply block;
+}
+
+.header-scrolled {
+  @apply h-24 ;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3); /* Optional: Add box-shadow for a subtle effect */
+  backdrop-filter: blur(10px); /* Add blur effect to the background content */
 }
 
 /* Tablets */
-@media (min-width: 601px) and (max-width: 1025px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .header-container {
-    justify-content: space-around;
-    padding: 10px 20px;
-    margin-bottom: 15%;
-    width: 100%;
+    @apply flex-col justify-center mb-4 right-32 mt-10 left-0 relative;
   }
 
   .header-container .nav-menu {
-    position: absolute;
-    width: 100%;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.9);
-    overflow: hidden;
-    align-items: center;
+    @apply hidden;
   }
 
   .header-container .logo {
-    width: 120px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    top: 10px;
-    transform: translateX(-50%);
+    @apply hidden;
   }
 
-  .header-container .nav-menu.open {
-    max-height: 500px; /* Adjust based on the number of links */
-  }
 
-  .header-container .nav-link {
-    margin: 10px 0;
-    font-size: 18px;
+  .mobile {
+    @apply flex flex-row w-full justify-between items-center;
   }
 
   .burger-icon {
-    display: grid;
-    font-size: 30px;
-    position: absolute;
-    top: 70px;
-    right: 80%;
-    z-index: 3;
+    @apply flex text-5xl transform top-14 right-24 z-40;
+  }
+
+  .logoMedia {
+    @apply flex w-40 h-auto  ml-80 z-40; /* Adjust size and make the background transparent */
+  }
+
+  .mobile-nav-menu {
+    @apply flex flex-col w-full z-40 top-9;
+    margin-left: -520px;
+    margin-top: 60rem;
+  }
+
+  .mobile-nav-menu .nav-link {
+    @apply text-5xl;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+  .header-container {
+    @apply flex-col justify-stretch mb-4 left-28 right-28 mt-3;
+  }
+
+  .header-container .nav-menu {
+    @apply hidden;
+  }
+
+  .header-container .logo {
+    @apply w-28 top-4;
+  }
+
+  .mobile {
+    @apply w-full h-full;
+  }
+
+  .burger-icon {
+    @apply flex text-3xl absolute transform -translate-x-1/2 top-16 -right-14 z-40;
   }
 
   .header-container .nav-menu.left,
   .header-container .nav-menu.right {
-    display: none;
+    @apply hidden;
   }
 
   .mobile-nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 25%;
-    z-index: 3;
+    @apply flex flex-col w-full mt-48 z-40;
   }
 
   .mobile-nav-menu .nav-link {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    font-size: 40px;
-
-  }
-
-}
-
-/* Smartphones */
-@media (max-width: 768px) {
-  .header-container {
-    justify-content: space-between;
-    padding: 10px 20px;
-    width: 100%;
-    margin-bottom: 20%;
-    z-index: 10;
-  }
-
-  .header-container .logo {
-    width: 80px;
-    height: auto;
-    position: absolute;
-    left: 53%;
-    top: 10px;
-    transform: translateX(-50%);
-  }
-
-  .header-container .nav-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    transition: max-height 0.3s ease-out;
-  }
-
-  .header-container .nav-link {
-    margin: 10px 0;
-    font-size: 18px;
-  }
-
-  .burger-icon {
-    display: grid;
-    font-size: 30px;
-    position: absolute;
-    top: 40px;
-    left: 14%;
-    z-index: 3;
-  }
-
-  .mobile-nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 50%;
-    margin-right: 7%;
-    z-index: 3;
-  }
-
-  .mobile-nav-menu .nav-link {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .header-container .nav-menu.open {
-    display: flex;
-    max-height: 500px; /* Adjust based on the number of links */
-  }
-}
-
-/* Desktops */
-@media (min-width: 1025px) {
-  .header-container {
-    justify-content: space-between;
-    padding: 7px 10px;
-  }
-
-  .header-container .logo {
-    width: 100px;
-  }
-
-  .header-container .nav-menu {
-    flex-direction: row;
-  }
-
-  .header-container .nav-link {
-    margin: 0 15px;
-    font-size: 17px;
-  }
-
-  .burger-icon {
-    display: none;
-  }
-
-  .mobile-nav-menu {
-    display: none;
+    @apply text-3xl;
   }
 }
