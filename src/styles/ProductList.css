@@ -1,0 +1,14 @@
+.product-list {
+  display: table;
+  align-items: center;
+  overflow: hidden; /* Ensure no overflow */
+  padding: 10px;
+}
+
+.product-item {
+  flex: 0 0 auto;
+  margin-right: 100px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+

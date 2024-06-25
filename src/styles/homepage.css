@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.header {
+.container .header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -15,7 +15,7 @@
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
 }
 
-.image-background {
+.container .image-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@
   object-position: center; /* Centers the image */
 }
 
-.content {
+.container .content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,23 +44,34 @@
   justify-content: center;
 }
 
-.typewriter-container {
+.content .typewriter-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.typewriter p {
-  border-right: .15em solid #ffffff;
+.typewriter-container .typewriter p {
+  /* overflow: hidden; */
+  border-right: .15em solid #ffffff; /* Light color for the cursor */
   white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto; /* Center typewriter content */
   letter-spacing: .15em;
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #ffffff;
+  font-size: 2.5em; /* Larger text size */
+  font-weight: bold; /* Bolder text */
+  color: #ffffff; /* Light text color */
+  animation: typing 5s steps(40, end), blink-caret .115s step-end infinite; /* Slower typing animation */
 }
 
 .blink {
   border-right: .15em solid transparent;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #ffffff; }
 }

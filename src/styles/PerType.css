@@ -1,0 +1,23 @@
+.background-container {
+  position: relative;
+  /* background-image: url('public\Product_bg.jpg'); */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh; /* Adjust based on your layout needs */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product-item {
+  margin: 10px;
+}
