@@ -5,8 +5,8 @@ import Background from '../UI/Background.js';
 import '../../styles/homepage.css';
 
 const texts = [
-  "Swagatham.   ",
-  "స్వాగతం.   "
+  "Swagatham.",
+  "స్వాగతం."
 ];
 
 const HomePage = () => {
