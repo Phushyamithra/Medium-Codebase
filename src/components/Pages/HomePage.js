@@ -5,7 +5,7 @@ import Background from '../UI/Background.js';
 import '../../styles/homepage.css';
 
 const texts = [
-  "Swagatham.",
+  "Svāgatham.",
   "స్వాగతం."
 ];
 
